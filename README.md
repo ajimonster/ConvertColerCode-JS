@@ -4,3 +4,5 @@
 カラーコードをそれぞれの形式に変換するツールです。
 
 css他 コーディングに役立ちます。
+
+[実行ページ](http://ajimonster.com/c3/HTML5_ConvertColerCode.html)
