@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+    
+    <head>
+        <meta http-equiv="content-type" content="text/html"; charset="UTF-8">
+            <meta name="viewport"
+                content="width=device-width,
+                initial-scale=1,
+                maximum-scale=1,
+                user-scalable=no" >
+                <link rel="stylesheet" type="text/css"href="content.css">
+                    <script type="text/javascript" src="main.js"></script>
+                    <title>RGBカラーコード変換</title>
+                    
+                    </head>
+    
+    <header>
+    </header>
+    
+    <body>
+        <section id = "convert">
+            <h1>カラーコード変換ツール　<sub>ConvertColorCode</sub></h1>
+            <p>RGB入力は10進数、16進数、フロートのいずれでも入力可能です。ただし、RGBそれぞれの形式は一律にしてください<br>
+            結果は下の欄に表示されます。<br>
+            また、下の欄にも直接入力して変換することも可能です。下の欄に入力するときは下記の入力形式に沿って入力してください。</p>
+            
+            <p>入力形式<br>
+            10進数　:　{0 ~ 255} , {0 ~ 255} , {0 ~ 255}  (スペース、カッコ不問。コンマ必須)<br><br>
+            16進数　:　{00 ~ ff}{00 ~ ff}{00 ~ ff}    (「0」単体不可)<br><br>
+            フロート　:　{0.00 ~ 1.00} , {0.00 ~ 1.00} , {0.00 ~ 1.00}    (コンマ、小数点第２まで必須)</p>
+            
+            <div id = "Error"></div>
+            <h3>RGB</h3>
+            <a>R </a><input type="text" onKeyUp="inputRedTextKeyUp(this)" />
+            <a>G </a><input type="text" onKeyUp="inputGreenTextKeyUp(this)" />
+            <a>B </a><input type="text" onKeyUp="inputBlueTextKeyUp(this)" />
+            <br>
+            <br>
+            <div id = "HexButton"></div>
+            <br><br>
+            <h3>10進数　<sub>Decimal number</sub></h3>
+            <input id = "IntInput" type="text" onKeyUp="inputIntTextKeyUp(this)" /><br>
+            <h3>16進数　<sub>Hexadecimal</sub></h3>
+            <input id = "HexInput" type="text" onKeyUp="inputHexTextKeyUp(this)" /><br>
+            <h3>フロート　<sub>float</sub></h3>
+            <input id = "FloatInput" type="text" onKeyUp="inputFloatTextKeyUp(this)" /><br>
+            <br>
+            <br>
+        </section>
+        <HR size="5" color = "#343434">
+        <section id = "simulator">
+            <h1>カラーコードシミュレータ　<sub>Simulate Color</sub></h1>
+            
+            <p>背景色とテキストの見栄えを素早く確認できます。<br>
+            入力は16進数のみです。「＃」は含めないでください。</p>
+            
+            <h3>背景色　<sub>background</sub></h3>
+            <input id = "bgColorInput" type="text" onKeyUp="bgColorKeyUp(this)" /><br>
+            <h3>テキスト　<sub>text color</sub></h3>
+            <input id = "textColorInput" type="text" onKeyUp="textColorKeyUp(this)" /><br>
+            <br>
+            <div id = "sample">
+                <br>
+                サンプルテキスト
+                <br><br>
+            </div>
+            <br>
+            <br>
+        </section>
+        
+    </body>
+    
+    <footer>
+    </footer>
+    
+</html>
