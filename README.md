@@ -5,4 +5,4 @@
 
 css他 コーディングに役立ちます。
 
-[実行ページ](http://ajimonster.com/tool/HTML5_ConvertColerCode.html)
+[実行ページ](http://ajimonster.com/tool/ConvertColerCode.html)
